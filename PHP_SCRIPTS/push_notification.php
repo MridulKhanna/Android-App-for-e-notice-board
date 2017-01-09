@@ -1,31 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @MridulKhanna
-
-0
-0
-
-    0
-
-MridulKhanna/Firebase-Cloud-Messaging
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Wiki
-Pulse
-Graphs
-Settings
-Firebase-Cloud-Messaging/PHP_SCRIPTS/push_notifications.php
-64707ef 11 days ago
-@MridulKhanna MridulKhanna Update push_notifications.php
-53 lines (48 sloc) 1.34 KB
 <?php 
 if($_SERVER['REQUEST_METHOD']=='POST')
 {
@@ -75,9 +47,5 @@ echo "Not sent";
        
 	$message_status = send_notification($tokens, $message);
 	echo $message_status;
- ?>		
-
-    Contact GitHub API Training Shop Blog About 
-
-    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
+ ?>	
 
