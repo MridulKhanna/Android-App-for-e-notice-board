@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PICT Connect</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_be_">Be_Activity</string>
+
+
+    <string-array name="be_list">
+        <item>Notices</item>
+        <item>Syllabus</item>
+        <item>Time Table</item>
+        <item>Placements</item>
+    </string-array>
+
+    <string-array name="fe_se_te_list">
+        <item>Notices</item>
+        <item>Syllabus</item>
+        <item>Time Table</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
