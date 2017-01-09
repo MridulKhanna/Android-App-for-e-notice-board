@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="2dp"
+        app:titleMarginStart="20dp"
+        app:titleTextAppearance="@style/AppTheme.Toolbar.Title" />
+
+
+    <LinearLayout
+        android:id="@+id/relative_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        android:background="@android:drawable/divider_horizontal_dark"
+        >
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/username"
+                android:drawableLeft="@drawable/ic_menu_user"
+                android:hint="user"
+                android:drawablePadding="20dp"
+                android:textColorHint="@color/highlight"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/White"
+                android:ems="10"
+                android:hint="password"
+                android:textColorHint="@color/highlight"
+                android:id="@+id/password"
+                android:drawableLeft="@drawable/ic_menu_password"
+                android:drawablePadding="20dp"
+                android:layout_above="@+id/relative_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="@color/White"
+            android:id="@+id/login"
+            android:background="@drawable/shadow_login"
+            android:layout_marginTop="15dp"
+            />
+
+        <Button
+            android:onClick="user_register"
+            android:textColor="@color/White"
+            android:background="@drawable/shadow_login"
+            android:layout_marginTop="10dp"
+            android:id="@+id/register_user"
+            android:text="Register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

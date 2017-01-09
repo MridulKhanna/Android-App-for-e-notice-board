@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background"
+              android:weightSum="1">
+<!--
+<RelativeLayout
+                android:id="@+id/upperview"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/LightYellow"
+                android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <include
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar_layout"></include>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/Blue"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notice Title:"/>
+
+    <EditText
+        android:layout_marginTop="90dp"
+        android:id="@+id/notice_title"
+        android:hint="Enter Your Notice Title"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/Blue"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notice Text:"
+        android:layout_below="@id/notice_title"/>
+    <EditText
+        android:id="@+id/notice_detail"
+        android:hint="Enter Your Notice"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/notice_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.32"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:lines="4"
+        android:scrollbars="vertical"
+        android:maxLines="8"/>
+
+</RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/Blue"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notice Type:"
+        />
+
+    <RadioGroup
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/radiogroup"
+        >
+
+    <RadioButton
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placement"
+        android:id="@+id/radioButton2"
+        />
+
+    <RadioButton
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Others"
+        android:id="@+id/radioButton"/>
+</RadioGroup>
+
+    <TextView
+        android:layout_below="@id/radiogroup"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/Blue"
+        android:textSize="20dp"
+        android:paddingLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notice Recipients:"
+        />
+
+    <CheckBox
+        android:onClick="select_all"
+        android:text="Select ALL"
+        android:id="@+id/all_select_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="130dp"
+        />
+
+    <CheckBox
+        android:layout_below="@id/all_select_box"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="FE"
+        android:id="@+id/fe_box"
+        android:onClick="fe_chkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:layout_below="@id/all_select_box"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:text="SE"
+        android:id="@+id/se_box"
+        android:onClick="se_te_be_chkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:layout_below="@id/fe_box"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="TE"
+        android:id="@+id/te_box"
+        android:onClick="se_te_be_chkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:layout_below="@id/se_box"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        android:text="BE"
+        android:id="@+id/be_box"
+        android:onClick="se_te_be_chkbox"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:layout_below="@id/all_select_box"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="250dp"
+        android:text="Comp"
+        android:id="@+id/comp_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:layout_below="@id/comp_box"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="250dp"
+        android:text="IT"
+        android:id="@+id/it_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <CheckBox
+        android:layout_below="@id/comp_box"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft ="250dp"
+        android:text="Entc"
+        android:id="@+id/entc_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_below="@id/all_select_box"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/teacher_name"
+        android:hint="Enter Your Name"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="upload_tch_on_clk"
+        android:id="@+id/upload_tch"
+        android:text="Upload"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="140dp"
+        android:layout_below="@id/teacher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </ScrollView>
+-->
+
+</LinearLayout>

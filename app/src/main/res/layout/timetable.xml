@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        android:padding="2dp"
+        app:titleMarginStart="20dp"
+        app:titleTextAppearance="@style/AppTheme.Toolbar.Title" />
+
+
+    <Button
+        android:layout_margin="8dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Computer"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/secomp"
+        android:background="@color/highlight"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Information Technology"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/highlight"
+        android:id="@+id/seit"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:text="Electronics and Telecomunication"
+        android:id="@+id/seentc"
+        android:layout_height="80dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/highlight"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
