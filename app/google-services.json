@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "879099141640",
+    "firebase_url": "https://pictconnect.firebaseio.com",
+    "project_id": "pictconnect",
+    "storage_bucket": "pictconnect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:879099141640:android:cd40e546da4d039f",
+        "android_client_info": {
+          "package_name": "com.example.hp.pictconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "879099141640-v03pd6kjtk8it9h4j5d6b2trsgegj2se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA23MM-fT1mIAm3LD6gA7jiF4kNEmPjxw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
