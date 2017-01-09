@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:weightSum="1">
+
+
+    <Button
+        android:layout_margin="5dp"
+        android:background="@color/highlight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open camera"
+        android:id="@+id/takepicture" />
+
+    <Button
+        android:layout_margin="5dp"
+        android:background="@color/highlight"
+        android:layout_below="@id/takepicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:id="@+id/buttonChoose" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@id/buttonChoose"
+        android:scrollbars="vertical"
+        android:layout_gravity="center_vertical"
+
+        />
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload image"
+
+        android:layout_margin="5dp"
+        android:background="@color/highlight"
+        android:id="@+id/buttonUpload"
+        android:layout_gravity="bottom" />
+
+</RelativeLayout>
